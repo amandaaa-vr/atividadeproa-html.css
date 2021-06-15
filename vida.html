@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advinha-Vida</title>
+        <meta charset="utf-8">
+		<!-- JavaScript Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+		<link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Courgette & display = swap" rel = "folha de estilo ">
+        <link rel = "preconnect" href = "https://fonts.gstatic.com">
+        <link href = "https://fonts.googleapis.com/css2? family = Aclonica & display = swap" rel = "folha de estilo ">                  
+        <link href="estilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" type="image/x-icon" href=https://cdn.pixabay.com/photo/2013/07/12/19/27/question-mark-154789_960_720.png>
+        <link href="/docs/4.1/dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+          <div class="container-fluid">
+            <nav class="navbar navbar-dark bg-cinza">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="rounded-3 "id="logo" src="https://images.pexels.com/photos/5428834/pexels-photo-5428834.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-inline-block align-text-top" >
+                            <a class="título"> Esta afim de conhecer um pouco mais sobre mim?</a>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pessoal.html"> <i class="fas fa-user"></i>  Lado pessoal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="profissional.html"><i class="fas fa-laptop-code"></i>  Profissional</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vida.html"> <i class="fas fa-coffee"></i>  Qualidade de Vida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="relacionamentos.html"> <i class="fas fa-user-friends"></i> Relacionamentos interpessoais</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="navbar-brand">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-home"></i> </a>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="conteiner-fluid" id="cont-fluid">
+            <div class="container" id="main" >
+              <h1>Qualidade de Vida</h1>
+                <main>
+                  <div class="card">
+                    <div class="card-header">
+                      Citação
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                          <a class="nav-link" href="">
+                            <p>Não é porque eu acho lindo quem acorda ás 5hrs da manhã pra ir se excercitar que quer dizer  eu tambem vá...</p>
+                            <footer class="blockquote-footer">  <cite title="Source Title">Me</cite></footer>
+                          </a>
+                        </blockquote>
+                    </div>
+                  </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">digamos que não pratico muito esportes </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://i1.wp.com/grupodicas.com.br/wp-content/uploads/2020/03/Caminhada-e-corrida.jpg?w=800" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">más uma caminhada é tudooooooooooo</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="http://medworld.com.br/wp-content/uploads/2017/03/importancia-frutas-citricas.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text"> adoro frutas cítricas, com bastante caldo rs .</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://nordestinospaulistanos.com.br/wp-content/uploads/2020/12/69524535_2423110027756065_3482220524224905216_n-300x292.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">gosto muitão de manga verde com sal </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-3">
+                        <img src="https://www.altoastral.com.br/media/_versions/legacy/2017/03/carne-proibida_widexl.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">eu amo comer carne, más teve um período da minha vida que eu só sentia nojo ao vê ou sentir o cheiro</p>
+                        </div>
+                      </div>
+                      <div class="card mt-3">
+                        <div class="card-body">
+                          <p class="card-text"> não gosto de pequi de jeito nenhum, não gostooooooo!!!</p>
+                        </div>
+                        <img src="https://imgsapp2.correiobraziliense.com.br/app/noticia_127983242361/2019/02/10/736344/20190208162554122754u.JPG"  Raio da borda class="card-img-bottom  border border-white" alt="...">
+                    </div>
+
+
+
+
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://cdn.panelinha.com.br/receita/1616435249465-CP-2021---01-02_5908_receita.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">salada de tomate combina com tudo no meu ponto de vista.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://naminhapanela.com/wp-content/uploads/2019/04/farofa-de-banana-da-terra1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">farofa de banana da terra, é tudo e uns canudo. MUITO "BAUM"</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://www.receitasagora.com.br/wp-content/uploads/2020/02/receita-de-cuscuz-de-tapioca.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">famoso cuscuz carioca, eu que sou uma formiguinh nem gosto (contem ironia)</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <img src="https://www.receitasagora.com.br/wp-content/uploads/2020/01/receita-de-brigadeiro-goumet-de-leite-ninho.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">por ultimo más não menos importante, brigadeiro de ninho, nossa meu preferido de longeeeeeeeeee </p>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </main>
+            </div>
+        </div>
+        <footer>
+            <div class="conteiner-fluid" id="footer">
+              <div class='row'>
+                <div class="col-6">
+                    <a class="nav-link" href="https://github.com/amandaaa-vr">
+                        <i class="fab fa-github-square"></i> </a>
+                </div>
+                <div class="col-6">
+                    <a class="nav-link" href="https://www.linkedin.com/in/amanda-vieira10/">
+                        <i class="fab fa-linkedin"></i> </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
